@@ -4,56 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>LOGO</header>
+  <header><img class="logo" src="images/logo.png" alt="My Company London"></header>
 
   <nav>
     <ul>
-      <li><a class="nav-link nav-selected" href="/index.html">Home</a></li>
+      <li><a class="nav-link nav-unselected" href="/index.html">Home</a></li>
       <li><a class="nav-link nav-unselected" href="/services.html">Services</a></li>
-      <li><a class="nav-link nav-unselected" href="/contact.html">Contact</a></li>
+      <li><a class="nav-link nav-selected" href="/contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="contact_us">
-    <h1>Contact Us</h1>
-    <p>If you would like to get in touch with us please use the form below</p>
-    <form>
-      <label>Name</label>
+  <section class="card">
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>If you would like to get in touch with us please use the form below</p>
+      <form>
+        <label>Name</label>
+        <br />
+        <input type="text" id="name" placeholder="Your Name" />
+        <br />
+        <label>Email</label>
+        <br />
+        <input type="text" id="email" placeholder="Your Email" />
+        <br />
+        <label>Message</label>
+        <br />
+        <input type="text" id="message" placeholder="Your Message" style="height: 200px" />
+      </form>
       <br />
-      <input type="text" id="name" placeholder="Your Name" />
-      <br />
-      <label>Email</label>
-      <br />
-      <input type="text" id="email" placeholder="Your Email" />
-      <br />
-      <label>Message</label>
-      <br />
-      <input type="text" id="message" placeholder="Your Message" style="height: 200px" />
-    </form>
-    <br />
-    <button>Send</button>
+      <button>Send</button>
+    </div>
   </section>
 
-  <section id="map">
-    <h1>Map</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
-    </p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2118.5317055745104!2d-0.12105148418674412!3d50.84277716185454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C%20Brighton%20and%20Hove!5e0!3m2!1sen!2suk!4v1710936618776!5m2!1sen!2suk"
-      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+  <div class="right-container">
+    <section class="card">
+      <div class="content">
+        <h1>Map</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2118.5317055745104!2d-0.12105148418674412!3d50.84277716185454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48758509f6294167%3A0x9cc6af7a727d0ef9!2sBrighton%2C%20Brighton%20and%20Hove!5e0!3m2!1sen!2suk!4v1710936618776!5m2!1sen!2suk"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
